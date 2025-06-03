@@ -15,10 +15,12 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/images/background.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: 70vh ; 
+    background-position: right;
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -30,6 +32,7 @@ nav{
 }
 .logo{
     width: 140px;
+   
 }
 nav ul li{
     display: inline-block;
@@ -85,6 +88,15 @@ flex-basis: 35%;
 }
 .about-col-2{
     flex-basis: 60%;
+}
+.about-col-2 h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}   
+.about-col-2 p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
 }
 .sub-title{
     font-size: 60px;
@@ -149,7 +161,17 @@ flex-basis: 35%;
     font-weight: 300;
     transition: background .5s, transform .5s;
 }
-    .services-list div i{
+.services-list div p{
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.services-list div p i{
+ font-size: 13px;
+}
+.services-list div a i{
+ font-size: 13px;
+}
+.services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
     }
@@ -184,6 +206,18 @@ flex-basis: 35%;
     overflow: hidden;
     border-radius: 10px;
 }
+.work .layer span{
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.work .layer span:hover{
+    background: #fff;
+    color: #ff004f;
+    transition: background .5s, color .5s;
+
+}
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -209,21 +243,31 @@ flex-basis: 35%;
     color: #ebe8e8;
     transition: height .5s;
 }
+.layer hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+}
 .layer h3{
     font-weight: 600;
     margin-bottom: 20px;
 }
 .layer a{
     text-decoration: none;
-    color: #ff004f;
+    color: #fff;
     margin-top: 20px;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #080808;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+.layer a:hover{
+    box-shadow: #000 0 0 40px;
+    background: #756b6e;
 }
 .work:hover img{
     transform: scale(1.1);
@@ -317,11 +361,19 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
 #header{
-    background-image: url(/images/phone-background.png);
+    background-image: url(/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 70vh;
 }
 .header-text{
-    margin-top: 100%;
-    font-size: 16px;
+     background-color: rgba(0, 0, 0, 0.6);
+     padding: 20px;
+     border-radius: 10px;
+     max-width: 100%;
+     margin : 420px auto 0 0;
+     font-size: 20px;
 }
 .header-text h1{
     font-size: 30px;
@@ -378,8 +430,11 @@ nav ul .fa-solid{
     margin-left: -20px;
 }
 .copyright{
-    padding: 15px 0;
     font-size: 14px;
+    padding: 15px 0;
+    margin-left: 35px;
+    margin-top: 90px;
+
 }
 }
     
