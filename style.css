@@ -66,6 +66,19 @@ header ul li{
     font-size: 3.5em;
     margin: 0;
 }
+.item .name button{
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(199, 195, 195);
+    box-shadow: 2px 2px 10px #c1c8d3, -2px -2px 10px #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.name button:hover{
+    background-color: rgb(48, 48, 226);
+    color: #fff;
+}
 .gradientText{
   display: inline-block;
     background: var(--gradient-bg);
