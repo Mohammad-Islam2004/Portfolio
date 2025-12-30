@@ -229,6 +229,7 @@ header input{
     background-image: var(--gradient-bg);
     color: #fff;
 }
+
 /* Desktops and laptops ----------- */
 @media  screen and (min-width:1224px) {
 	/* Styles */
