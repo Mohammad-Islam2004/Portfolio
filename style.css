@@ -91,9 +91,9 @@ header ul li{
 }
 .job::before{
     content: attr(data-job1);
-    overflow: hidden;
+    /* overflow: hidden; */
     display: inline-flex;
-    animation: effectText 1s linear infinite alternate,    changeText 4s linear infinite;
+    /* animation: effectText 1s linear infinite alternate,    changeText 4s linear infinite; */
 }
 @keyframes effectText{
     from{
@@ -284,7 +284,7 @@ header input{
         top: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 70px);
+        grid-template-rows: repeat(6, 70px);
         transform: translateX(-100%);
         transition: 0.5s;
     }
